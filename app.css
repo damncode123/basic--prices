@@ -83,7 +83,7 @@ background-color: white;
  width: 100%;
  max-width: 1200px;
  display: flex;
- flex-direction:row;
+ flex-direction:column;
  justify-content: center;
  align-items: center;
  text-align: center;
@@ -150,4 +150,17 @@ a:hover,a:focus
 {
     background-color: #269aff;
     color: white;
+}
+@media (min-width: 1150px){
+    section{
+         flex-direction: row;
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 3px solid #e1f1ff;  
+    }
+    .pricing-plan:last-child
+    {
+        border-right: none;
+    }
 }
